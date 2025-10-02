@@ -1,4 +1,4 @@
-/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
@@ -275,4 +275,46 @@ form input[type="submit"] {
     font-size: 1.05rem;
     box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    form input,
+    form textarea,
+    form select,
+    form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
